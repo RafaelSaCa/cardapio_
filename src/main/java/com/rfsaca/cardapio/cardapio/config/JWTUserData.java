@@ -11,7 +11,7 @@ import lombok.Getter;
 @Getter
 public class JWTUserData {
 
-  private String usuarioId;
+  private Long usuarioId;
   private String email;
   private List<Role> roles;
   

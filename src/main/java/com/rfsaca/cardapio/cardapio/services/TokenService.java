@@ -44,7 +44,7 @@ public class TokenService {
 
             return Optional.of(JWTUserData.builder()
                     .email(decode.getSubject())
-                    .usuarioId(decode.getClaim("usuarioId").asString())
+                    .usuarioId(decode.getClaim("usuarioId").asLong())
                     .roles(decode.getClaim("roles").asList(Role.class))
                     .build());
 
